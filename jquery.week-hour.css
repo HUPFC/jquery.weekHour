@@ -1,0 +1,94 @@
+
+
+#jq-pl-week-hour,
+#jq-pl-week-hour ul,
+#jq-pl-week-hour ul li,
+#jq-pl-week-hour div{
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#jq-pl-week-hour{
+
+    width: 921px;
+    height: 318px;
+    padding: 2px;
+    font-size: 14px;
+    z-index: 999;
+    color: #333333;
+    font-family: 微软雅黑 sans-serif;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #e2e6f0;
+    overflow: hidden;
+}
+
+#jq-pl-week-hour[data-click_num="1"]{
+    border:solid 1px #89bdfd;
+}
+
+#jq-pl-week-hour ul{
+    padding-left: 1px;
+    padding-top:1px;
+    width: 100%;
+    overflow: hidden;
+    zoom:1;
+}
+
+#jq-pl-week-hour ul li{
+    margin-left: -1px;
+    margin-top: -1px;
+    list-style-type: none;
+    line-height: 34px;
+    border: 1px solid #e2e6f0;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    float: left;
+}
+
+#jq-pl-week-hour .jq-pl-week-hour-left{
+    width: 80px;
+    float: left;
+}
+
+#jq-pl-week-hour .jq-pl-week-hour-left-text{
+    width: 80px;
+    height: 70px;
+    background-color: #ebedf5;
+    line-height: 68px;
+    border: 1px solid #e2e6f0;
+}
+
+#jq-pl-week-hour .jq-pl-week-hour-left ul li{
+    width: 78px;
+    line-height: 34px;
+    border-right: 1px solid transparent;
+    border-bottom:  1px solid transparent;
+}
+
+#jq-pl-week-hour .jq-pl-week-hour-left ul li:last-child{
+    border: 1px solid #e2e6f0;
+}
+
+#jq-pl-week-hour .jq-pl-week-hour-content{
+    float:left;
+    width: 841px;
+    background-color: #ebedf5;
+}
+
+#jq-pl-week-hour .jq-pl-week-hour-content .jq-pl-week-hour-title ul:first-child li{
+    width: 209px;
+}
+
+#jq-pl-week-hour .jq-pl-week-hour-content .jq-pl-week-hour-picker ul li{
+    background: white;
+    cursor: pointer;
+}
+
+#jq-pl-week-hour .jq-pl-week-hour-content .jq-pl-week-hour-picker ul li.on{
+    background-color: #89bdfd;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.1.9.1.min.js"></script>
+    <script type="text/javascript" src="../jquery.week-hour.js"></script>
+    <link  rel="stylesheet" type="text/css"  href="../jquery.week-hour.css">
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            font-family: 微软雅黑;
+            color: #333333;
+        }
+        body .row{
+            width: 1280px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        body .row input{
+
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div>选择禁用的时间段</div>
+
+    <div id="week-hour"></div>
+</div>
+
+<script>
+    $(function(){
+        var o = $.weekHour({
+            id:'week-hour',
+            section:'16777214,16777215,15,0,0,0,0',//预选项
+            callback:function(section){
+                //回调
+                console.log(section);
+            }
+        });
+        o.getSection();//直接获取当前选中值
+        o.status();//获取当前状态是否完成
+    })
+</script>
+</body>
+</html>
