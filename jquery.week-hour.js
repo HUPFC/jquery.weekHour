@@ -153,7 +153,8 @@ jQuery.extend({
                         return false;
                     }else{
                         var sectionValue = 1;//默认选中
-
+                        o.clickSection.sort();
+                        console.log(o.clickSection);
                         if (o.section[o.clickSection[0]]){
                             sectionValue = 0;//反选渲染
                         }
